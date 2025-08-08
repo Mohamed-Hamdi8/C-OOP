@@ -62,15 +62,15 @@
             #endregion
 
             #region Create a struct named Rectangle that represents a rectangle with the following fields:
-            //Rectangle rect = new Rectangle();
+            Rectangle rect = new Rectangle();
 
-            //rect.Width = 5.5;
-            //rect.Height = 3.2;
+            rect.Width = 5.5;
+            rect.Height = 3.2;
 
-            //rect.Width = -2;
-            //rect.Height = -4;
+            rect.Width = -2;
+            rect.Height = -4;
 
-            //rect.DisplayInfo();
+            rect.DisplayInfo();
             #endregion
         }
     }
