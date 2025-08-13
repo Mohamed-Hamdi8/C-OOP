@@ -26,7 +26,7 @@
             //Gender Gender;
             //for (int i = 0; i < employees.Length; i++)
             //{
-            //    Console.WriteLine($"Enter Employee {i+1} Data : ");
+            //    Console.WriteLine($"Enter Employee {i + 1} Data : ");
             //    do
             //    {
             //        Console.Write("Id : ");
@@ -34,13 +34,13 @@
             //    } while (!Parsed);
             //    do
             //    {
-            //    Console.Write("Name : ");
-            //        Name = Console.ReadLine(); 
-            //    }while (Name is null);
+            //        Console.Write("Name : ");
+            //        Name = Console.ReadLine();
+            //    } while (Name is null);
             //    do
             //    {
             //        Console.Write("Salary : ");
-            //        Parsed = decimal.TryParse(Console.ReadLine(), out  Salary);
+            //        Parsed = decimal.TryParse(Console.ReadLine(), out Salary);
             //    } while (!Parsed);
             //    do
             //    {
@@ -55,18 +55,18 @@
             //    do
             //    {
             //        Console.Write("Year :  ");
-            //        Parsed = int.TryParse(Console.ReadLine(), out  year);
+            //        Parsed = int.TryParse(Console.ReadLine(), out year);
             //    } while (!Parsed);
             //    do
             //    {
             //        Console.Write("Enter Gender (M/F) : ");
             //        Parsed = Enum.TryParse(Console.ReadLine(), true, out Gender);
             //    } while (!Parsed);
-            //    if(i==0)
+            //    if (i == 0)
             //        employees[i] = new Employee(Id, Name, SecurityPrivileges.DBA, Salary, new HiringDate(day, month, year), Gender);
-            //    else if (i==1)
+            //    else if (i == 1)
             //        employees[i] = new Employee(Id, Name, SecurityPrivileges.Guest, Salary, new HiringDate(day, month, year), Gender);
-            //    else if (i==2)
+            //    else if (i == 2)
             //        employees[i] = new Employee(Id, Name, (SecurityPrivileges)15, Salary, new HiringDate(day, month, year), Gender);
 
 
@@ -76,19 +76,19 @@
             #endregion
 
             #region Q.4
-            //Employee[] emp = new Employee[3];
-            //emp[0] = new Employee(1, "Ali", SecurityPrivileges.Developer, 10000, new HiringDate(1, 2, 2020), Gender.m);
-            //emp[1] = new Employee(2, "Sara", SecurityPrivileges.Guest, 5000, new HiringDate(5, 4, 2021),Gender.f);
-            //emp[2] = new Employee(3, "Omar", SecurityPrivileges.Secretary, 15000, new HiringDate(10, 1, 2019),Gender.m );
+            Employee[] emp = new Employee[3];
+            emp[0] = new Employee(1, "Ali", SecurityPrivileges.Developer, 10000, new HiringDate(1, 2, 2020), Gender.m);
+            emp[1] = new Employee(2, "Sara", SecurityPrivileges.Guest, 5000, new HiringDate(5, 4, 2021), Gender.f);
+            emp[2] = new Employee(3, "Omar", SecurityPrivileges.Secretary, 15000, new HiringDate(10, 1, 2019), Gender.m);
 
-            //Array.Sort(emp, (e1, e2) =>
-            //{
-            //    int d1 = e1.HireDate.ToNumber(); // No boxing
-            //    int d2 = e2.HireDate.ToNumber(); // No boxing
-            //    return d1.CompareTo(d2); 
-            //});
-            //foreach (Employee employee in emp)
-            //    Console.WriteLine(employee);
+            Array.Sort(emp, (e1, e2) =>
+            {
+                int d1 = e1.HireDate.ToNumber(); // No boxing
+                int d2 = e2.HireDate.ToNumber(); // No boxing
+                return d1.CompareTo(d2);
+            });
+            foreach (Employee employee in emp)
+                Console.WriteLine(employee);
             #endregion
 
             #region Q.5
